@@ -28,17 +28,18 @@ A secure and flexible **Django REST Framework** based API to manage fitness cent
 - **Testing**: Django `APITestCase`
 
 ---
-
-## 📂 Project Structure
+## 📁 Project Structure
+<pre>
 fitness_app/
 │
-├── models.py # FitnessCenter model
-├── views.py # API views with permissions
-├── serializers.py # Serializers (not shown here)
-├── tests.py # Full test cases using APITestCase
-fitness/
-├── urls.py # Routes for API endpoints
+├── models.py           # FitnessCenter model
+├── views.py            # API views with permissions
+├── serializers.py      # Serializers (not shown here)
+├── tests.py            # Full test cases using APITestCase
 
+fitness/
+├── urls.py             # Routes for API endpoints
+</pre>
 ---
 
 ## 🔐 Authentication
@@ -102,36 +103,56 @@ You can pass query parameters like:
 Returned as part of the center's response.
 
 ---
+<h2>🧪 Running Tests</h2>
 
-## 🧪 Running Tests
+<pre><code>python manage.py test</code></pre>
 
-```bash
-python manage.py test
+<p>Runs all test cases under <code>fitness_app/tests.py</code>.</p>
 
-Runs all test cases under fitness_app/tests.py.
+<hr/>
 
-🚀 Getting Started (Locally)
+<h2>🚀 Getting Started (Locally)</h2>
+
+<pre><code>
 git clone https://github.com/yourusername/fitness-api.git
 cd fitness-api
+</code></pre>
 
-Install dependencies
-pip install -r requirements.txt
+<h3>Install dependencies</h3>
 
-Run migrations
+<pre><code>pip install -r requirements.txt</code></pre>
+
+<h3>Run migrations</h3>
+
+<pre><code>
 python manage.py makemigrations
 python manage.py migrate
+</code></pre>
 
-Create superuser (optional)
-python manage.py createsuperuser
+<h3>Create superuser (optional)</h3>
 
-Run server
-python manage.py runserver
+<pre><code>python manage.py createsuperuser</code></pre>
 
-📌 Requirements
-Django>=4.0
-djangorestframework
-djangorestframework-simplejwt
+<h3>Run server</h3>
 
-👨‍💻 Author
-Md Javed
-Django & DRF Developer | Data Scientist
+<pre><code>python manage.py runserver</code></pre>
+
+<hr/>
+
+<h2>📌 Requirements</h2>
+
+<ul>
+  <li>Django >= 4.0</li>
+  <li>djangorestframework</li>
+  <li>djangorestframework-simplejwt</li>
+</ul>
+
+<hr/>
+
+<h2>👨‍💻 Author</h2>
+
+<p><strong>Md Javed</strong><br/>
+Django & DRF Developer | Data Scientist<br/>
+<a href="https://github.com/mdjaved24">GitHub Profile</a></p>
+
+<hr/>
